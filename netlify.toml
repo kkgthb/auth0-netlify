@@ -1,0 +1,5 @@
+[dev]
+  base = "./"
+  command = "npm run dev"
+  publish = "dist"
+  functions = "functions" # This seems to help local Netlify detect functions

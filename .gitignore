@@ -12,3 +12,9 @@
 # Ignore "node_modules"
 /node_modules/
 /node_modules/**
+
+# Ignore "dist", my static output folder
+/dist/
+/dist/**
+# Local Netlify folder
+.netlify
