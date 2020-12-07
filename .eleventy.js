@@ -4,13 +4,16 @@ module.exports = (eleventyConfig) => {
   module.exports = function (eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
   };
-
+  
   // Make Liquid capable of rendering "partials"
   eleventyConfig.setLiquidOptions({
     dynamicPartials: true,
     strict_filters: true,
   });
-
+  
+  // Pass front-end JS straight through from "src" to "dist"
+  eleventyConfig.addPassthroughCopy("./src/static/js/");
+  
   // Clarify which folder is for input and which folder is for output
   return {
     dir: {

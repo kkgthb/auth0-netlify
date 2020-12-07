@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@11ty/eleventy": ">=0.11.0",
-    "@serverless-jwt/netlify": ">=0.2.0"
+    "@serverless-jwt/netlify": ">=0.2.0",
+    "netlify-identity-widget": ">=1.9.1"
   }
 }

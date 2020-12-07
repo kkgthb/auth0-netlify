@@ -9,6 +9,6 @@ exports.handler = verifyJwt(async (event, context) => {
   const { claims } = context.identityContext;
   return {
     statusCode: 200,
-    body: `Hi there ${claims.email}!`
+    body: `Hi there ${claims['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress']}!`
   };
 });
